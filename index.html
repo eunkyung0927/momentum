@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Momentum</title>
+    <script src = "index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+        * {
+            font-family: 'Poppins', sans-serif;
+        }    
+        
+        body {
+            background-image: url("https://k.kakaocdn.net/dn/2bNYH/btqFBZHWT4D/qxLN0MiaB8cQhgfvIm8dAk/img.jpg");
+            background-size: 100%;
+            color: white;
+        }
+        body::before{
+        content: "";
+        opacity: 0.3;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgb(179 179 179);
+        }
+
+        .time {
+            font-size: 80px;
+            font-weight: bold;
+        }
+        .greeting {
+            font-size: 50px;
+        }
+        .todo {
+            font-size: 30px;
+        }
+        .author {
+            font-size: 25px;
+            font-style: italic;
+        }
+
+        .main{
+            height: 70vh;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .quote{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <script>
+    </script>
+</head>
+
+<body>
+    <div class="main">    
+        <div id="time" class="time">12:00</div>
+        <div class ="greeting">Hello</div>
+        <div class ="todo">공부하기</div>
+    </div>
+    <div class="quote">    
+        <div id="author" class ="author">- -</div>
+        <div id="content"class ="content">" "</div>
+    </div>
+
+</body>
+
+</html>
